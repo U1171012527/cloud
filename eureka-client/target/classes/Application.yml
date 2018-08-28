@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: eureka-client
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:5000/eureka/
+server:
+  port: 5001
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+      health:
+        show-details: ALWAYS
